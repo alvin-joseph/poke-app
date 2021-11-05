@@ -1,0 +1,126 @@
+/* Individual Types */
+.grass {
+    background-color: #ABF79E;
+}
+.fire {
+    background-color: #FFB971;
+}
+.water {
+    background-color: #8CC4E2;
+}
+.normal {
+    background-color: #DCDCDC;
+}
+.poison {
+    background-color: #D6A2E4;
+}
+.electric {
+    background-color: #FFE662;
+}
+.bug {
+    background-color: #B3D75B;
+}
+.ground {
+    background-color: #E69A74;
+}
+.fairy {
+    background-color: #FCB8E8;
+}
+.fighting {
+    background-color: #D37185;
+}
+.psychic {
+    background-color: #FFA5DA;
+}
+.rock {
+    background-color: #CBB989;
+}
+.ghost {
+    background-color: #838ED9;
+}
+.ice {
+    background-color: #93F0E3;
+}
+.dragon {
+    background-color: #88A2E8;
+}
+
+/* Dual Types */
+.grass-poison {
+    background-image: linear-gradient(#ABF79E, #D6A2E4)
+}
+.grass-psychic {
+    background-image: linear-gradient(#ABF79E, #FFA5DA)
+}
+.fire-flying {
+    background-image: linear-gradient(#FFB971, #BFC8DE)
+}
+.bug-flying {
+    background-image: linear-gradient(#B3D75B, #BFC8DE)
+}
+.bug-poison {
+    background-image: linear-gradient(#B3D75B, #D6A2E4)
+}
+.normal-flying {
+    background-image: linear-gradient(#DCDCDC, #BFC8DE)
+}
+.poison-ground {
+    background-image: linear-gradient(#D6A2E4, #E69A74)
+}
+.normal-fairy {
+    background-image: linear-gradient(#DCDCDC, #FCB8E8)
+}
+.poison-flying {
+    background-image: linear-gradient(#D6A2E4, #BFC8DE)
+}
+.bug-grass {
+    background-image: linear-gradient(#B3D75B, #ABF79E)
+}
+.water-fighting {
+    background-image: linear-gradient(#8CC4E2, #D37185)
+}
+.water-poison {
+    background-image: linear-gradient(#8CC4E2, #D6A2E4)
+}
+.water-psychic {
+    background-image: linear-gradient(#8CC4E2, #FFA5DA)
+}
+.water-ice {
+    background-image: linear-gradient(#8CC4E2, #93F0E3)
+}
+.water-flying {
+    background-image: linear-gradient(#8CC4E2, #BFC8DE)
+}
+.rock-ground {
+    background-image: linear-gradient(#CBB989, #E69A74)
+}
+.rock-water {
+    background-image: linear-gradient(#CBB989, #8CC4E2)
+}
+.rock-flying {
+    background-image: linear-gradient(#CBB989, #BFC8DE)
+}
+.ground-rock {
+    background-image: linear-gradient(#E69A74, #CBB989)
+}
+.electric-steel {
+    background-image: linear-gradient(#FFE662, #5695A3)
+}
+.electric-flying {
+    background-image: linear-gradient(#FFE662, #BFC8DE)
+}
+.ghost-poison {
+    background-image: linear-gradient(#838ED9, #D6A2E4)
+}
+.psychic-fairy {
+    background-image: linear-gradient(#FFA5DA, #FCB8E8)
+}
+.ice-psychic {
+    background-image: linear-gradient(#93F0E3, #FFA5DA)
+}
+.ice-flying {
+    background-image: linear-gradient(#93F0E3, #BFC8DE)
+}
+.dragon-flying {
+    background-image: linear-gradient(#88A2E8, #BFC8DE)
+}

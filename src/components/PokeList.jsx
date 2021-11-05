@@ -1,6 +1,8 @@
 import React from 'react'
 import Loader from 'react-loader-spinner'
 
+import './PokeColors.css'
+
 export const PokeList = ({ pokemen, handlePoke, loading }) => {
     return (
         <div className="row">
@@ -14,7 +16,9 @@ export const PokeList = ({ pokemen, handlePoke, loading }) => {
             <div
                 onClick={() => handlePoke(pokemon.data.id)}
                 key={pokemon.data.id}
-                className="col col-lg-2 col-md-3 col-sm-6 col-xs-12 poke-card"
+                className={`col col-lg-2 col-md-3 col-sm-6 col-xs-12 poke-card 
+                ${pokemon.data.types[1] ? pokemon.data.types[0].type.name + "-" + pokemon.data.types[1].type.name
+                : pokemon.data.types[0].type.name}`}
             >
                 <img 
                     className="poke-image"
