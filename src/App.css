@@ -10,6 +10,11 @@
     margin: 0;
 }
 
+.poke-number {
+    font-family: 'Mochiy Pop One', sans-serif;
+    padding: 4% 0;
+}
+
 .poke-card {
     margin: 1% 0;
     padding: 1%;
@@ -24,6 +29,7 @@
 .poke-card:hover {
     transform: scale(1.05);
     transition: ease-in-out 0.3s;
+    cursor: pointer;
 }
 
 .poke-image {
@@ -40,4 +46,52 @@
 
 .name {
     font-size: 1.4rem;
+}
+
+/* Selected Poke */
+
+.modal {
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+.modal-header {
+    background-color: rgb(194, 194, 194);
+}
+
+.modal-title {
+    font-size: 1.4rem;
+}
+
+.modal-body {
+    line-height: 2;
+}
+
+.modal-body > ul {
+    color: rgb(144, 7, 7);
+}
+
+.modal-body > ul > li {
+    color: black;
+}
+
+.stats {
+    margin: 2% 0;
+}
+
+.modal-footer {
+    background-color: rgb(194, 194, 194);
+}
+
+.poke-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    line-height: 2;
+}
+
+.poke-footer > h4 {
+    font-size: .9rem;
+    text-align: center;
 }

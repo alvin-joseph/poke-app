@@ -1,10 +1,11 @@
-import './App.css';
+import './App.css'
 
 import { PokeList } from './components/PokeList'
-import usePokeState from './hooks/usePokeState';
+import { SelectedPoke } from './components/SelectedPoke'
+import usePokeState from './hooks/usePokeState'
 
 function App() {
-  const [pokemen, selectedPokemon, handlePoke, loading] = usePokeState([], {});
+  const [pokemen, selectedPokemon, evolution, handlePoke, loading, clicked] = usePokeState([], {})
 
   return (
     <div className="container-fluid">
@@ -13,8 +14,13 @@ function App() {
         handlePoke={handlePoke}
         loading={loading}
       />
+      <SelectedPoke 
+        selectedPokemon={selectedPokemon} 
+        clicked={clicked}
+        evolution={evolution}
+      />
     </div>
   );
 }
 
-export default App;
+export default App
