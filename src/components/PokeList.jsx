@@ -3,16 +3,29 @@ import Loader from 'react-loader-spinner'
 
 import './PokeColors.css'
 
-export const PokeList = ({ pokemen, handlePoke, loading }) => {
+export const PokeList = ({ pokemen, handlePoke, loading, searchName, searchType }) => {
+    const filterByName = val => {
+        if(searchName === '') {
+            return val
+        }else if (val.data.name.toLowerCase().includes(searchName.toLowerCase())) {
+            return val
+    }}
+    const filterByType = val => {
+        if(searchType === '') {
+            return val
+        }else if (val.data.types[0].type.name.toLowerCase().includes(searchType.toLowerCase())) {
+            return val
+    }}
+
     return (
         <div className="row">
             {loading && (
                 <div className="spinner">
                     <Loader type="Puff" color="#204963" height="60" width="60" />
-                    <p>Loading Pokemon...</p>
+                    <p>Loading Pokémon...</p>
                 </div>
             )}
-            {pokemen.map((pokemon) => (
+            {pokemen.filter(filterByName).filter(filterByType).map((pokemon) => (
             <div
                 onClick={() => handlePoke(pokemon.data.id)}
                 key={pokemon.data.id}
