@@ -1,4 +1,4 @@
-# Poke App
+# PokéApp
 
 A list of the Kanto Region pokémon with details for each. Built with React, Bootstrap, and the PokéAPI
 
