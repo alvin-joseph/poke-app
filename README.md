@@ -23,5 +23,5 @@ Demo GIF
 ## Run Locally
 
 * Clone this repo
-* Run npm install and npm start
-* The application opens in http://localhost:3000/ or any other available port
+* Run `npm install` and `npm start`
+* The application opens in `http://localhost:3000/` or any other available port
