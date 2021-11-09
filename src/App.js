@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <img className="title-img" src="/images/pokedex2.PNG" alt="pokedex"/>
+        <img className="title-img" src="/images/pokedex2.png" alt="pokedex"/>
       </div>
       <div className="row">
         <input className="search" type="text" placeholder="Filter by name.." onChange={onChangeName}/>
