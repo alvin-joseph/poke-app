@@ -42,7 +42,7 @@ const usePokeState = (initialPokemen, initialSelectedPokemon) => {
       // eslint-disable-next-line
     }, [])
   
-    return([pokemen, selectedPokemon, evolution, handlePoke, loading, clicked]); 
+    return([pokemen, selectedPokemon, evolution, handlePoke, loading, clicked])
 }
 
-export default usePokeState;
+export default usePokeState

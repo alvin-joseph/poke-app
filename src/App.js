@@ -6,9 +6,9 @@ import { SelectedPoke } from './components/SelectedPoke'
 import usePokeState from './hooks/usePokeState'
 
 function App() {
-  const [pokemen, selectedPokemon, evolution, handlePoke, loading, clicked] = usePokeState([], {})
-  const [searchName, setSearchName] = useState("");
-  const [searchType, setSearchType] = useState("");
+  const [pokemen, selectedPokemon, evolution, handlePoke, loading, clicked] = usePokeState([], [])
+  const [searchName, setSearchName] = useState("")
+  const [searchType, setSearchType] = useState("")
 
   const onChangeName = e => {
     setSearchName(e.target.value)
@@ -40,7 +40,7 @@ function App() {
         evolution={evolution}
       />
     </div>
-  );
+  )
 }
 
 export default App
