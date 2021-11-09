@@ -1,4 +1,4 @@
-import { useState } from 'react/cjs/react.development'
+import React, { useState } from 'react'
 import './App.css'
 
 import { PokeList } from './components/PokeList'
@@ -6,7 +6,7 @@ import { SelectedPoke } from './components/SelectedPoke'
 import usePokeState from './hooks/usePokeState'
 
 function App() {
-  const [pokemen, selectedPokemon, evolution, handlePoke, loading, clicked] = usePokeState([], [])
+  const [pokemen, selectedPokemon, evolution, handlePoke, loading, clicked] = usePokeState([], {})
   const [searchName, setSearchName] = useState("")
   const [searchType, setSearchType] = useState("")
 
