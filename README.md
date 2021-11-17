@@ -1,4 +1,4 @@
-# Poke App
+# PokéApp
 
 A list of the Kanto Region pokémon with details for each. Built with React, Bootstrap, and the PokéAPI
 
@@ -23,5 +23,5 @@ Demo GIF
 ## Run Locally
 
 * Clone this repo
-* Run npm install and npm start
-* The application opens in http://localhost:3000/ or any other available port
+* Run `npm install` and `npm start`
+* The application opens in `http://localhost:3000/` or any other available port
