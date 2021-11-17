@@ -68,6 +68,7 @@ export const PokeList = ({
               effect="blur"
               src={pokemon.data.sprites.other.dream_world.front_default}
               alt={pokemon.data.name}
+              delayMethod={'debounce'}
             />
             <div className="poke-info">
               <p className="name">
