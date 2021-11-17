@@ -1,5 +1,6 @@
 import React from "react";
 import Loader from "react-loader-spinner";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "./PokeColors.css";
 
@@ -62,8 +63,9 @@ export const PokeList = ({
                 ? "#" + pokemon.data.id
                 : "#0" + pokemon.data.id}
             </h2>
-            <img
+            <LazyLoadImage
               className="poke-image"
+              effect="blur"
               src={pokemon.data.sprites.other.dream_world.front_default}
               alt={pokemon.data.name}
             />
