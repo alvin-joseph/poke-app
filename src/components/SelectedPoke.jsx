@@ -81,5 +81,44 @@ export const SelectedPoke = ({ selectedPokemon, clicked, evolution }) => {
         </div>
       </div>
     </div>
-  ) : null;
+  ) : (
+    <div
+      className="modal fade"
+      id="pokemonInfo"
+      tabIndex="-1"
+      aria-labelledby="pokemonInfoLabel"
+      aria-hidden="true"
+    >
+      <div className="modal-dialog modal-dialog-centered">
+        <div className="modal-content">
+          <div className="modal-header">
+            <h2 className="modal-title" id="pokemonInfoLabel">
+              Welcome to the Pokédex!
+            </h2>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div className="modal-body">
+            <h4>Click on a Pokémon to get more detailed information</h4>
+          </div>
+          <div className="modal-footer">
+            <div className="poke-footer">
+              <h3>Enjoy the App!</h3>
+            </div>
+            <button
+              type="button"
+              className="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Got it
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };

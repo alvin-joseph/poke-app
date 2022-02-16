@@ -1,15 +1,13 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import evoData from "../evoData";
 
-const usePokeState = (initialPokemen, initialSelectedPokemon) => {
-  const [pokemen, setPokemen] = useState(initialPokemen);
+const usePokeState = (initialSelectedPokemon) => {
   const [selectedPokemon, setSelectedPokemon] = useState(
     initialSelectedPokemon
   );
   const [evolution, setEvolution] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [clicked, setClicked] = useState(false);
 
   const getPokemonData = async (id) => {
@@ -29,21 +27,7 @@ const usePokeState = (initialPokemen, initialSelectedPokemon) => {
     setEvolution(getEvoData(id));
   };
 
-  useEffect(() => {
-    const getPokemen = async () => {
-      let pokemenArray = [];
-      for (let i = 1; i <= 151; i++) {
-        pokemenArray.push(await getPokemonData(i));
-      }
-      setPokemen(pokemenArray);
-      setLoading(false);
-    };
-    getPokemen();
-    handlePoke(1);
-    // eslint-disable-next-line
-  }, []);
-
-  return [pokemen, selectedPokemon, evolution, handlePoke, loading, clicked];
+  return [selectedPokemon, evolution, handlePoke, clicked];
 };
 
 export default usePokeState;

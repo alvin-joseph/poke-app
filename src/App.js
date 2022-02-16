@@ -6,8 +6,7 @@ import { SelectedPoke } from "./components/SelectedPoke";
 import usePokeState from "./hooks/usePokeState";
 
 function App() {
-  const [pokemen, selectedPokemon, evolution, handlePoke, loading, clicked] =
-    usePokeState([], {});
+  const [selectedPokemon, evolution, handlePoke, clicked] = usePokeState({});
   const [searchName, setSearchName] = useState("");
   const [searchType, setSearchType] = useState("");
 
@@ -39,9 +38,7 @@ function App() {
         />
       </div>
       <PokeList
-        pokemen={pokemen}
         handlePoke={handlePoke}
-        loading={loading}
         searchName={searchName}
         searchType={searchType}
       />
