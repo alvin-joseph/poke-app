@@ -12,13 +12,15 @@ A list of the Kanto Region pokémon with details for each. Built with React, Boo
 
 Demo GIF
 
-[![Image from Gyazo](https://i.gyazo.com/c274d00c0b177864ced0ad27c1892218.gif)](https://gyazo.com/c274d00c0b177864ced0ad27c1892218)
+[![Image from Gyazo](https://i.gyazo.com/609fa04aa9230edfcc1d172629457b78.gif)](https://gyazo.com/609fa04aa9230edfcc1d172629457b78)
 
 ## Built With
 
 * React
 * Bootstrap
 * PokéAPI
+* Firestore
+* Framer-Motion
 
 ## Run Locally
 
