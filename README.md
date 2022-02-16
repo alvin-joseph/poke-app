@@ -19,7 +19,7 @@ Demo GIF
 * React
 * Bootstrap
 * PokéAPI
-* Firestore
+* Firebase
 * Framer-Motion
 
 ## Run Locally
