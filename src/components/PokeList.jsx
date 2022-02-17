@@ -68,7 +68,7 @@ export const PokeList = ({ handlePoke, searchName, searchType }) => {
                 : "#0" + pokemon.id}
             </h2>
             {currentImage ? (
-              <img src={currentImage} alt="pokeball" />
+              <img src={currentImage} alt="pokeball" className="pokeball" />
             ) : (
               <motion.img
                 className="poke-image"

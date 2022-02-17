@@ -47,6 +47,9 @@
     cursor: url("./cursor/pokeball.png"), url("./cursor/pokeball.cur"), pointer;
 }
 
+.pokeball {
+    width: 30%;
+}
 .poke-image {
     width: 120px;
     height: 120px;
